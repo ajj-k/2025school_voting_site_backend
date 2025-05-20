@@ -7,12 +7,12 @@ import {
   Patch,
   Post,
 } from '@nestjs/common';
-import { MentorService } from './mentor/mentor.service';
-import { CreateMentorDto } from './mentor/dto/create-mentor.dto/create-mentor.dto';
-import { UpdateMentorDto } from './mentor/dto/update-mentor.dto/update-mentor.dto';
+import { MentorService } from './mentor.service';
+import { CreateMentorDto } from './dto/create-mentor.dto/create-mentor.dto';
+import { UpdateMentorDto } from './dto/update-mentor.dto/update-mentor.dto';
 
 @Controller()
-export class MentorContrller {
+export class MentorController {
   constructor(private readonly service: MentorService) {}
 
   @Get()
